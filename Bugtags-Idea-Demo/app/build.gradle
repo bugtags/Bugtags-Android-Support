@@ -25,6 +25,15 @@ android {
     }
 }
 
+//应用插件
+apply plugin: 'com.bugtags.library.plugin'
+
+//自动上传插件
+bugtags {
+    appKey 'd3ad445a39bf60628f7acd4bd08eff4f'  //这里是你的 appKey
+    appSecret 'e01dfb622b45cce0235fe2cc0b0b3798'    //这里是你的 appSecret，管理员在设置页可以查看
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.bugtags.library:bugtags-lib:latest.integration'
